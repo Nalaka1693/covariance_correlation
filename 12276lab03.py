@@ -20,7 +20,7 @@ def corre(vec_1, vec_2):
 
 
 def covar_mat(mat):
-    # covar. matrix of n obervations (rows) k random variables (columns)
+    # covar. matrix of n obervations (rows) of k random variables (columns)
     mat = mat.T
     i = mat.shape[0]
     n = mat.shape[1]
@@ -33,7 +33,7 @@ def covar_mat(mat):
 
 
 def corre_mat(mat):
-    # corre. matrix of n obervations (rows) k random variables (columns)
+    # corre. matrix of n obervations (rows) of k random variables (columns)
     mat = mat.T
     i = mat.shape[0]
     cov = np.cov(mat)
